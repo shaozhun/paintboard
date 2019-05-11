@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>在线画板</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="//at.alicdn.com/t/font_1186068_ffjtmngr42o.js"></script>
+</head>
+
+<body>
+  <canvas id="xxx" width=300 height=300></canvas>
+
+  <div id=actions class="actions">
+    <svg class="icon svgactive" id="pen" >
+      <use xlink:href="#icon-pen"></use>
+    </svg>
+    <svg class="icon" id="eraser">
+      <use xlink:href="#icon-eraser"></use>
+    </svg>
+    <svg class="icon" id="save">
+      <use xlink:href="#icon-save"></use>
+    </svg>
+    <svg class="icon" id="clear">
+      <use xlink:href="#icon-clear_away"></use>
+    </svg>
+  </div>
+  <ol class="colors">
+    <li id="red" class="red"></li>
+    <li id="blue" class="blue"></li>
+    <li id="green" class="green"></li>
+  </ol>
+  <ol class="size">
+    <li id="thin" ></li>
+    <li id="heavy"></li>
+  </ol>
+
+
+  <script src="./index.js"></script>
+  
+</body>
+
+</html>
