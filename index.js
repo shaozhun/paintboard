@@ -1,6 +1,10 @@
 var yyy = document.getElementById('xxx');
 var context = yyy.getContext('2d');
 
+context.fillStyle = "#fff";
+context.fillRect(0, 0, yyy.width, yyy.height);
+
+
 autoSetCanvasSize(yyy)
 
 listenToUser(yyy)
@@ -62,17 +66,7 @@ a.click()
 console.log(strDataURI)
 }
   
-var imageData = context.getImageData(0, 0, yyy.width, yyy.height);
-for(var i = 0; i < imageData.data.length; i += 4) {
-    // 当该像素是透明的，则设置成白色
-    if(imageData.data[i + 3] == 0) {
-        imageData.data[i] = 255;
-        imageData.data[i + 1] = 255;
-        imageData.data[i + 2] = 255;
-        imageData.data[i + 3] = 255; 
-    }
-}
-context.putImageData(imageData, 0, 0);
+
 
 
   /******/
